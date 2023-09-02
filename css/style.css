@@ -1,0 +1,123 @@
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;  
+}
+
+header {
+    background: url(../images/background_nav.jpg) no-repeat;
+}
+
+h1 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    font-size: 0px;
+}
+
+.brand_name_container {
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.brand_name_container p {
+    margin: 0;
+}
+
+.phone_number {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_info {
+    width: 1920px;
+    min-height: 900px;
+    background-position: 0 0;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.nav_address {
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1110px;
+    min-height: 48px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li {
+    width: 276px;
+    border: 1px solid #fff;
+}
+
+.nav li:first-child {
+    border-left: none;
+}
+
+.nav li:last-child {
+    border-right: none;
+}
+
+.nav a {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.nav_info_links {
+    display: flex;
+    justify-content: space-between;
+    width: 416px;
+    min-height: 50px;
+    margin: 0 auto;
+    margin-top: 584px;
+}
+
+.nav_info_links a {
+    padding: 15px 30px 15px 30px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #99862A;
+    color: #fff;
+}
+
+.wine_description {
+    color: #fff;
+    background-color: #282828;
+}
+
+.wine_description_container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.wine_description_container h2 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+}
