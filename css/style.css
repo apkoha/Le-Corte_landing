@@ -48,9 +48,6 @@ h1 {
     color: #fff;
 }
 
-.nav_address {
-}
-
 .nav {
     display: flex;
     justify-content: space-around;
