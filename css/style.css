@@ -157,26 +157,48 @@ h1 {
 }
 
 .winemap {
-  background: #E6E3C4;
-  color: #282828;;
+    font-family: 'Montserrat', sans-serif;
+    background: #E6E3C4;
+    color: #282828;;
 }
 
 .winemap_container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 1110px;
     margin: 0 auto;
-    /* padding: 52px 0px;
-    border-top: 1px solid #998431;
-    border-bottom: 1px solid #998431; */
+    padding: 136px 0px;
+}
+
+.winemap_container::before {
+    content: "";
+    position: absolute;
+    top: 76px;
+    width: 1110px;
+    height: 1px;
+    background: #998431;
+}
+
+.winemap_container::after {
+    content: "";
+    position: absolute;
+    bottom: 76px;
+    width: 1110px;
+    height: 1px;
+    background: #998431;
 }
 
 .container_winemap-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 444px;
+    min-height: 758px;
 }
 
 .container_winemap-table h2 {
-    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -184,24 +206,44 @@ h1 {
 }
 
 .container_winemap-table h3 {
+    margin: 0px;
     font-family: 'Playfair Display', serif;
     font-size: 36px;
     line-height: 54px;
 }
 
 .container_winemap-table p {
-    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    margin-bottom: 13px;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
 }
 
 .winemap-table {
-    border: 1px solid grey;
+    width: 445px;
+    min-height: 228px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid #E6E3C4;
 }
 
 .winemap-table td {
     border: 1px solid grey;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.winemap-table td span {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.winemap-table_column1 {
+    padding: 28px 14px;
 }
 
 .winemap-table_link {
@@ -209,7 +251,6 @@ h1 {
     min-height: 50px;
     padding: 15px 30px 15px 30px;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -225,4 +266,58 @@ h1 {
     justify-content: space-between;
     width: 540px;
     min-height: 758px;
+}
+
+.degustation {
+    font-family: 'Montserrat', sans-serif;
+    background: #282828;
+    color: #fff;
+}
+
+.degustation_container {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.degustation_container h2 {
+    position: absolute;
+    width: 490px;
+    min-height: 74px;
+    top: -30px;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 54px;
+    background: #282828;
+}
+
+.degustation_container p {
+    width: 539px;
+    margin: 0px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: relative;
+    width: 1110px;
+    min-height: 538px;
+    border: 3px solid #C4C4C4;
+}
+
+.test::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: -72px;
+    left: -36px;
+    background: url(../images/grape_icon.png) no-repeat;
 }
