@@ -19,20 +19,31 @@ h1 {
 }
 
 .brand_name_container {
-    display: flex;
-    justify-content: space-between;
-    width: 1110px;
-    margin: 0 auto;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 1110px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .brand_name_container p {
-    margin: 0;
+  margin: 0;
 }
 
+.nav_address,
 .phone_number {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_address:hover,
+.phone_number:hover {
+  color: #e2c740;
+}
+
+.nav_address:active,
+.phone_number:active {
+  color: #99862A;
 }
 
 .nav_info {
@@ -81,6 +92,14 @@ h1 {
   color: #fff;
 }
 
+.nav a:hover {
+  color: #e2c740;
+}
+
+.nav a:active {
+  color: #99862A;
+}
+
 .nav_info_links {
   display: flex;
   justify-content: space-between;
@@ -95,15 +114,24 @@ h1 {
   font-size: 16px;
   text-align: center;
   text-decoration: none;
-  background-color: #99862A;
+  background: #99862A;
   color: #fff;
   text-transform: uppercase;
+}
+
+.button_bronze:hover {
+  background: #6b5e1c;
+}
+
+.button_bronze:active {
+  background: #6b5e1c;
+  color: rgba(255, 255, 255, 0.5);;
 }
 
 .wine_description {
   padding: 100px 0px;
   color: #fff;
-  background-color: #282828;
+  background: #282828;
 }
 
 .wine_description_container {
@@ -220,11 +248,14 @@ h1 {
 }
 
 .container_winemap-table p {
-	margin: 0px;
-	margin-top: 60px;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 21px;
+}
+
+.winemap_container_first-text {
+  margin: 0px;
+  margin-top: 60px;
 }
 
 .winemap-table {
@@ -254,6 +285,16 @@ h1 {
   padding: 28px 14px;
 }
 
+.winemap_container_second-text {
+  margin: 0px;
+  margin-top: 30px;
+}
+
+.winemap_container_link-text {
+  margin: 0px;
+  margin-top: 28px;
+}
+
 .winemap-table_link {
   display: block;
   text-align: center;
@@ -265,7 +306,7 @@ h1 {
   font-weight: 500;
   line-height: 20px;
   color:#fff;
-  background-color: #998431;
+  background: #998431;
 }
 
 .container_wine-photo {
@@ -371,10 +412,21 @@ h1 {
 	min-height: 30px;
 	background: #282828;
 	color: #fff;
+  border: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.degustation_form-input::placeholder {
+  color: #fff;
+}
+
+.degustation_form-input:focus {
+  outline: none;
+  background: #8d8c8c;
 }
 
 .degustation_form-telephone {
-	margin-left: 10px;
+	margin-left: 18px;
 }
 
 .degustation_form-address {
@@ -382,7 +434,6 @@ h1 {
   margin: 0px;
 	margin-top: 36px;
   padding: 0px;
-  border-bottom: 1px #fff;
 }
 
 .degustation_button {
@@ -399,6 +450,15 @@ h1 {
   text-transform: uppercase;
 }
 
+.degustation_button:hover {
+  background: #8d8c8c;
+  border: 1px solid #cecece;
+}
+
+.degustation_button:active {
+  color: #282828;
+}
+
 .footer {
 	font-family: 'Montserrat', sans-serif;
 	background: #998431;
@@ -408,11 +468,9 @@ h1 {
 	width: 1110px;
 	min-height: 220px;
 	margin: 0 auto;
-	/* display: flex;
-	justify-content: column; */
 }
 
-.test {
+.footer_container_indentation {
   padding-top: 50px;
 }
 
@@ -443,6 +501,14 @@ h1 {
 
 .footer_container_navigation li:last-child a {
 	padding-right: 92px;
+}
+
+.footer_style:hover {
+  color:#e2c740;
+}
+
+.footer_style:active {
+  color: #6b5e1c;
 }
 
 .footer_container_second-line {
