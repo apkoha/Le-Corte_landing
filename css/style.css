@@ -1,10 +1,19 @@
 /* не подключены веб безопасные шрифты */
 
 body {
-  font-family: 'Montserrat', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.blur {
+  filter: blur(4px);
 }
 
 header {
+  /* min-height: 100vh; */
   background: url(../images/background_nav.jpg) no-repeat;
   background-position: center;
   background-size: cover;
@@ -598,16 +607,37 @@ background: url(../images/facebook-icon.svg) no-repeat center;
 }
 
 .disclaimer h2 {
+  margin-top: 40px;
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   line-height: 54px;
 }
 
 .disclaimer p {
+  margin-top: 32px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.disclaimer_buttons_container {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin-bottom: 28px;
+}
+
+.disclaimer_button {
+  min-width: 72px;
+  min-height: 36px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.disclaimer_button:hover {
+color: #e2c740;
 }
 
 @media (width <=1154px) {

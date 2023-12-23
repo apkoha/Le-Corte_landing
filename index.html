@@ -8,9 +8,11 @@
   	<link rel="preconnect" href="https://fonts.googleapis.com">
   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/bottle-glass.png">
+    <script src="/js/script.js" defer></script>
   </head>
   <body>
-		<header>
+		<header class="blur">
       <section class="nav_info container">
         <h1 class="brand_name">LE CORTE</h1>
         <div class="brand_name_container">
@@ -35,7 +37,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main class="blur">
       <section class="wine_description">
         <div class="wine_description_container">
           <h2>Лучший вкус, это вкус долголетнего вина</h2>
@@ -98,7 +100,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer blur">
       <div class="footer_container container">
         <div class="footer_container_indentation">
           <ul class="footer_container_navigation">
@@ -129,13 +131,13 @@
         </div>
       </div>
     </footer>
-    <section class="disclaimer container">
+    <section class="disclaimer">
       <h2>Внимание!<br>На сайте представлена алкогольная продукция!</h2>
       <p>Вам уже исполнилось 18 лет?</p>
-      <div class="disclaimer_buttons_container"></div>
-      <button>Да</button>
-      <button>Нет</button>
+      <div class="disclaimer_buttons_container">
+        <button class="button disclaimer_button" id="button_yes">Да</button>
+        <button class="button disclaimer_button" id="button_no">Нет</button>
+      </div>
     </section>
-    <script src="js/code.js"></script>
   </body>
 </html>
